@@ -17,11 +17,30 @@ Donovan Stukes: Donovan Stukes knows how to cook (Answer: False)
 
 
 #include <iostream>
+#include <vector>
+#include <string>
 using namespace std;
 
 int main()
 {
-    cout << "Hello World";
+  cout << "=============================================\n";
+    cout << "           Who Would've Guessed?\n";
+    cout << "========================================== \n;
+
+
+    cout << "Welcome to the Labyrinth of Truths and Lies!\n";
+ cout << "Meet the participants:\n";
+    cout << " - Ethan Sovereign\n";
+    cout << " - Donovan Stukes\n";
+    cout << " - Giovanni Vega\n";
+    cout << " - Mohammed Ahmed\n";
+    cout << " - Victor Nzekwe\n\n";
+
+    cout << "Each person has contributed a statement.\n";
+    cout << "Your job is to uncover the truth... if you can.\n\n";
+
+  // Store statements (you will use these later in the game)
+    vector<string> questions = 
 
     return 0;
 }
