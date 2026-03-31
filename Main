@@ -42,7 +42,14 @@ int main()
     cout << "Your job is to uncover the truth... if you can.\n\n";
 
   // Store statements (you will use these later in the game)
-    vector<string> questions = 
+    vector<string> questions = {
+    "Ethan Sovereign has gone skydiving".
+    "Donovan Stukes knows how to cook"
+    "Donovan Stukes has met famous rapper Skilla Baby"
+    "Donovan Stukes Is active in the gym ""
+
+
+    };
 
     return 0;
 }
