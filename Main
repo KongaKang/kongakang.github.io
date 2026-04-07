@@ -31,12 +31,12 @@ using namespace std;
 int main()
 {
   cout << "=============================================\n";
-    cout << "           Who Would've Guessed?\n";
-    cout << "========================================== \n;
+  cout << "           Who Would've Guessed?\n";
+  cout << "=============================================\n";
 
 
     cout << "Welcome to the Labyrinth of Truths and Lies!\n";
- cout << "Meet the participants:\n";
+    cout << "Meet the participants:\n";
     cout << " - Ethan Sovereign\n";
     cout << " - Donovan Stukes\n";
     cout << " - Giovanni Vega\n";
