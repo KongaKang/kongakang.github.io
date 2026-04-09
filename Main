@@ -22,8 +22,9 @@ Giovanni Vega: Giovanni Vega has never left the country (Answer: False)
 Giovanni Vega: Giovanni Vega has pulled an all-nighter (Answer: True)
 Giovanni Vega: Giovanni Vega has fallen asleep in class (Answer: True)
 
-Mohammed Ahmed: test
-
+Mohammed Ahmed: Mohammed Ahmed knows how to swim (Answer: FALSE)
+Mohammed Ahmed: Mohammed Ahmed has played video games for 5 hours straight (Answer: TRUE)
+Mohammed Ahmed: Mohammed Ahmed knows more than 4 languages (Answer: TRUE)
 *******************************************************************************/
 
 
@@ -73,7 +74,9 @@ int main()
     "Giovanni Vega has never left the country",
     "Giovanni Vega has pulled an all-nighter",
     "Giovanni Vega has fallen asleep in class"
-
+    "Mohammed Ahmed knows how to swim",
+    "Mohammed Ahmed has played video games for 5 hours straight",
+    "Mohammed Ahmed knows more than 4 languages"
 
     };
 
