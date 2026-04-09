@@ -66,7 +66,7 @@ int main()
     }
 
   // Store statements (you will use these later in the game)
-    vector<string> questions = {
+    vector<string> claims = {
     "Ethan Sovereign has gone skydiving.",
     "Ethan Sovereign wears glasses.",
     "Ethan Sovereign has a five food vertial jump.",
@@ -84,6 +84,23 @@ int main()
 
     srand(time(0));
 
+    int playerScore == 0;
+
+    while (playerScore < 6) {
+      //Give the player the initial prompt
+      cout << "\n=============================================\n";
+      cout << "Two guardians block this path. One tells only truths, the other only lies." << endl;
+      cout << "Ask the correct question to determine which path to take forward." << endl;
+
+      //Determine which question to ask
+      int currentQuestion = (rand() % 10 + 1);
+
+      //Ask the question
+      cout << "\nClaim: claims[currentQuestion]" << endl;
+      cout << "Two guardians block this path. One tells only truths, the other only lies." << endl;
+      cout << "Your question options are: \n1. \n2. \n3. " << endl;
+    }
+
     /*
 
     //Example format for questions:
@@ -93,17 +110,17 @@ int main()
     cout << "Ask the correct question to determine which path to take forward." << endl;
 
     //Question 1
-    cout << "\nClaim: questions[0]" << endl;
+    cout << "\nClaim: claims[0]" << endl;
     cout << "If this statement is true, take the left path. If it is false, take the right path.\n" << endl;
     cout << "Your question options are: \n1. Has Ethan Sovereign gone skydiving?\n2. Where did Ethan Sovereign go skydiving?\n3. Did Ethan Sovereign survive the fall?" << endl;
 
     //Question 2
-    cout << "\nClaim: questions[3]" << endl;
+    cout << "\nClaim: claims[3]" << endl;
     cout << "If this statement is true, take the left path. If it is false, take the right path.\n" << endl;
     cout << "Your question options are: \n1. What is Donovan Stukes's favorite food to cook?\n2. Did Donovan Stukes cook yesterday?\n3. Does Donovan Stukes know how to cook?" << endl;
 
     //Question 3
-    cout << "\nClaim: questions[6]" << endl;
+    cout << "\nClaim: claims[6]" << endl;
     cout << "If this statement is true, take the left path. If it is false, take the right path.\n" << endl;
     cout << "Your question options are: \n1. \n2. \n3. " << endl;
 
