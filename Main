@@ -104,9 +104,9 @@ int main()
       int currentQuestion = (rand() % 10 + 1);
 
       //Ask the question
-      cout << "\nClaim: claims[currentQuestion]" << endl;
+      cout << "\nClaim: " << claims[currentQuestion] << endl;
       cout << "Two guardians block this path. One tells only truths, the other only lies." << endl;
-      cout << "Your question options are: claims[currentQuestion]" << endl;
+      cout << "Your question options are: " << claims[currentQuestion] << endl;
 
       cout << "Enter either \" 1 \" \" 2 \" or \" 3 \"";
 
