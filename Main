@@ -88,12 +88,12 @@ int main()
     //Question 2
     cout << "\nClaim: Donovan Stukes knows how to cook." << endl;
     cout << "If this statement is true, take the left path. If it is false, take the right path.\n" << endl;
-    cout << "Your question options are: 1. What is Donovan Stukes's favorite food to cook?\n2. Did Donovan Stukes cook yesterday?\n3. Does Donovan Stukes know how to cook?" << endl;
+    cout << "Your question options are: \n1. What is Donovan Stukes's favorite food to cook?\n2. Did Donovan Stukes cook yesterday?\n3. Does Donovan Stukes know how to cook?" << endl;
 
     //Question 3
     cout << "\nClaim: Giovanni Vega has never left the country." << endl;
     cout << "If this statement is true, take the left path. If it is false, take the right path.\n" << endl;
-    cout << "Your question options are: 1. \n2. \n3. " << endl;
+    cout << "Your question options are: \n1. \n2. \n3. " << endl;
 
     return 0;
 }
