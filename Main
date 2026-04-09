@@ -103,7 +103,7 @@ int main()
     srand(time(0));
 
     int playerScore = 0;
-    int playerInput;
+    string playerInput = "0";
 
     while (playerScore < 6) {
       //Give the player the initial prompt
