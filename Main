@@ -53,10 +53,10 @@ int main()
 
   // Store statements (you will use these later in the game)
     vector<string> questions = {
-    "Ethan Sovereign has gone skydiving".
-    "Donovan Stukes knows how to cook"
-    "Donovan Stukes has met famous rapper Skilla Baby"
-    "Donovan Stukes Is active in the gym "
+    "Ethan Sovereign has gone skydiving",
+    "Donovan Stukes knows how to cook",
+    "Donovan Stukes has met famous rapper Skilla Baby",
+    "Donovan Stukes Is active in the gym",
     "Giovanni Vega has never left the country"
 
 
