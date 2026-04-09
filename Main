@@ -101,12 +101,12 @@ int main()
       cout << "Ask the correct question to determine which path to take forward." << endl;
 
       //Determine which question to ask
-      int currentQuestion = (rand() % 10 + 1);
+      int currentQuestion = (rand() % 2 + 1);
 
       //Ask the question
       cout << "\nClaim: " << claims[currentQuestion] << endl;
       cout << "Two guardians block this path. One tells only truths, the other only lies." << endl;
-      cout << "Your question options are: " << claims[currentQuestion] << endl;
+      cout << "Your question options are: " << questions[currentQuestion] << endl;
 
       cout << "Enter either \" 1 \" \" 2 \" or \" 3 \"";
 
