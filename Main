@@ -92,6 +92,7 @@ int main()
     srand(time(0));
 
     int playerScore = 0;
+    int playerInput;
 
     while (playerScore < 6) {
       //Give the player the initial prompt
@@ -106,6 +107,21 @@ int main()
       cout << "\nClaim: claims[currentQuestion]" << endl;
       cout << "Two guardians block this path. One tells only truths, the other only lies." << endl;
       cout << "Your question options are: claims[currentQuestion]" << endl;
+      cout << "Enter either \" 1 \" \" 2 \" or \" 3 \"";
+      cin >> playerInput;
+      if (playerInput == 1) {
+        cout << "" << endl;
+      }
+      else if (playerInput == 2) {
+        cout << "" << endl;
+      }
+      else if (playerInput == 3) {
+        cout << "" << endl;
+      }
+      else {
+        cout << "Please enter either 1, 2 or 3." << endl;
+      }
+
     }
 
     /*
