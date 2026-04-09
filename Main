@@ -109,17 +109,24 @@ int main()
       cout << "Your question options are: claims[currentQuestion]" << endl;
       cout << "Enter either \" 1 \" \" 2 \" or \" 3 \"";
       cin >> playerInput;
-      if (playerInput == 1) {
-        cout << "" << endl;
-      }
-      else if (playerInput == 2) {
-        cout << "" << endl;
-      }
-      else if (playerInput == 3) {
-        cout << "" << endl;
-      }
-      else {
-        cout << "Please enter either 1, 2 or 3." << endl;
+
+      bool questionRepeat = true;
+      while (questionRepeat == true) {
+        if (playerInput == 1) {
+          cout << "" << endl;
+          questionRepeat = false;
+        }
+        else if (playerInput == 2) {
+          cout << "" << endl;
+          questionRepeat = false;
+        }
+        else if (playerInput == 3) {
+          cout << "" << endl;
+          questionRepeat = false;
+        }
+        else {
+          cout << "Please enter either 1, 2 or 3." << endl;
+        }
       }
 
     }
