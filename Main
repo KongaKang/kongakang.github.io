@@ -69,7 +69,9 @@ int main()
     "Donovan Stukes knows how to cook",
     "Donovan Stukes has met famous rapper Skilla Baby",
     "Donovan Stukes Is active in the gym",
-    "Giovanni Vega has never left the country"
+    "Giovanni Vega has never left the country",
+    "Giovanni Vega has pulled an all-nighter",
+    "Giovanni Vega has fallen asleep in class"
 
 
     };
