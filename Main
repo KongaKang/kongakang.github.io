@@ -71,13 +71,19 @@ int main()
 
     };
 
-    //Question 1
     cout << "\n=============================================\n";
     cout << "Two guardians block this path. One tells only truths, the other only lies." << endl;
     cout << "Ask the correct question to determine which path to take forward." << endl;
+
+    //Question 1
     cout << "\nClaim: Ethan Sovereign has gone skydiving." << endl;
     cout << "If this statement is true, take the left path. If it is false, take the right path.\n" << endl;
     cout << "Your question options are: \n1. Has Ethan Sovereign gone skydiving?\n2. Where did Ethan Sovereign go skydiving?\n3. Did Ethan Sovereign survive the fall?" << endl;
+
+    //Question 2
+    cout << "\nClaim: Donovan Stukes knows how to cook." << endl;
+    cout << "If this statement is true, take the left path. If it is false, take the right path.\n" << endl;
+    cout << "Your question options are: 1. \n2. \n3." << endl
 
     return 0;
 }
