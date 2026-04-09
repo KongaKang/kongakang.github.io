@@ -82,6 +82,10 @@ int main()
 
     };
 
+    vector<string> claims = {
+      "\n1. Has Ethan Sovereign gone skydiving?\n2. Where did Ethan Sovereign go skydiving?\n3. Did Ethan Sovereign survive the fall?"
+    };
+
     srand(time(0));
 
     int playerScore == 0;
@@ -98,7 +102,7 @@ int main()
       //Ask the question
       cout << "\nClaim: claims[currentQuestion]" << endl;
       cout << "Two guardians block this path. One tells only truths, the other only lies." << endl;
-      cout << "Your question options are: \n1. \n2. \n3. " << endl;
+      cout << "Your question options are: claims[currentQuestion]" << endl;
     }
 
     /*
