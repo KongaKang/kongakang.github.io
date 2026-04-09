@@ -123,6 +123,9 @@ int main()
       cout << "Two guardians block this path. One tells only truths, the other only lies." << endl;
       cout << "Your question options are: " << questions[currentQuestion] << endl;
 
+      claims.erase(claims.begin() + currentQuestion);
+      questions.erase(questions.begin() + currentQuestion);
+
       cout << "Enter either \" 1 \" \" 2 \" or \" 3 \" ";
 
       bool questionRepeat = true;
