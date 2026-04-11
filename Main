@@ -234,6 +234,7 @@ int main()
           else {
             cout << "Please enter either 1, 2 or 3." << endl;
           }
+        }
 
           //Give the player the option to choose which path to take
           cout << "\nNow, choose which sentinel has told the truth (1 or 2)." << endl;
@@ -268,32 +269,6 @@ int main()
       }
       cout << "Final score: " << playerScore << " correct out of " << questionCount << " questions.\n";
       cout << "=============================================\n";
-      }
-
-    /*
-
-    //Example format for questions:
-
-    cout << "\n=============================================\n";
-    cout << "Two guardians block this path. One tells only truths, the other only lies." << endl;
-    cout << "Ask the correct question to determine which path to take forward." << endl;
-
-    //Question 1
-    cout << "\nClaim: claims[0]" << endl;
-    cout << "If this statement is true, take the left path. If it is false, take the right path.\n" << endl;
-    cout << "Your question options are: \n1. Has Ethan Sovereign gone skydiving?\n2. Where did Ethan Sovereign go skydiving?\n3. Did Ethan Sovereign survive the fall?" << endl;
-
-    //Question 2
-    cout << "\nClaim: claims[3]" << endl;
-    cout << "If this statement is true, take the left path. If it is false, take the right path.\n" << endl;
-    cout << "Your question options are: \n1. What is Donovan Stukes's favorite food to cook?\n2. Did Donovan Stukes cook yesterday?\n3. Does Donovan Stukes know how to cook?" << endl;
-
-    //Question 3
-    cout << "\nClaim: claims[6]" << endl;
-    cout << "If this statement is true, take the left path. If it is false, take the right path.\n" << endl;
-    cout << "Your question options are: \n1. \n2. \n3. " << endl;
-
-    */
 
     return 0;
 }
