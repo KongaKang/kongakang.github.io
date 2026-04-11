@@ -19,8 +19,8 @@ Donovan Stukes: Donovan Stukes has met famous rapper Skilla Baby (Answer:TRUE)
 Donovan Stukes: Donovan Stukes Is active in the gym (Answer:True)
 
 Giovanni Vega: Giovanni Vega has never left the country (Answer: False)
-Giovanni Vega: Giovanni Vega has pulled an all-nighter (Answer: True)
-Giovanni Vega: Giovanni Vega has fallen asleep in class (Answer: True)
+Giovanni Vega: Giovanni Vega has pulled an all-nighter (Answer: TRUE)
+Giovanni Vega: Giovanni Vega has fallen asleep in class (Answer: TRUE)
 
 Mohammed Ahmed: Mohammed Ahmed knows how to swim (Answer: FALSE)
 Mohammed Ahmed: Mohammed Ahmed has played video games for 5 hours straight (Answer: TRUE)
@@ -75,27 +75,27 @@ int main()
     // One-dimentional vector storing the claims asserted in each scenario
 
     vector<string> claimsEthan = {
-    "Ethan Sovereign has gone skydiving.",
-    "Ethan Sovereign wears glasses.",
+    "Ethan Sovereign has gone skydiving.", // TRUE
+    "Ethan Sovereign wears glasses.", // TRUE
     "Ethan Sovereign can do a double backflip.",
     };
 
     vector<string> claimsDonovan = {
-      "Donovan Stukes knows how to cook.",
-      "Donovan Stukes has met famous rapper Skilla Baby.",
-      "Donovan Stukes Is active in the gym."
+      "Donovan Stukes knows how to cook.", //FALSE
+      "Donovan Stukes has met famous rapper Skilla Baby.", // TRUE
+      "Donovan Stukes Is active in the gym." // TRUE
     };
 
     vector<string> claimsGiovanni = {
-      "Giovanni Vega has never left the country.",
-      "Giovanni Vega has pulled an all-nighter.",
-      "Giovanni Vega has fallen asleep in class.",
+      "Giovanni Vega has never left the country.", //FALSE
+      "Giovanni Vega has pulled an all-nighter.", // TRUE
+      "Giovanni Vega has fallen asleep in class.", // TRUE
     };
 
     vector<string> claimsMohammed = {
-      "Mohammed Ahmed knows how to swim.",
-      "Mohammed Ahmed has played video games for 5 hours straight.",
-      "Mohammed Ahmed knows more than 4 languages.",
+      "Mohammed Ahmed knows how to swim.", //FALSE
+      "Mohammed Ahmed has played video games for 5 hours straight.", // TRUE
+      "Mohammed Ahmed knows more than 4 languages.", // TRUE
     };
 
     vector<string> claimsVictor = {
@@ -105,9 +105,9 @@ int main()
     };
 
     vector<string> claimsKenny = {
-      "Kenny Chanya is part of a dance club.", 
-      "Kenny Chanya is a twitch streamer", 
-      "Kenny Chanya has gotten into a car accident before."
+      "Kenny Chanya is part of a dance club.", // TRUE
+      "Kenny Chanya is a twitch streamer", // TRUE
+      "Kenny Chanya has gotten into a car accident before." //FALSE
     };
 
     // One-dimentional vector storing the questions to each person's claim
