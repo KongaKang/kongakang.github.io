@@ -203,7 +203,7 @@ int main()
 
       //Determine which person the question will focus on
       if (questionCount == 0) {
-
+        //Ethan's segment
         //Ask the question
         cout << "\nClaim: " << claimsEthan[currentQuestion] << endl;
         cout << "\nTwo guardians block this path. One tells only truths, the other only lies.\nThey will only answer questions related to the claim above.\n" << endl;
@@ -235,6 +235,41 @@ int main()
             cout << "Please enter either 1, 2 or 3." << endl;
           }
         }
+      }
+
+        else if (questionCount == 1) {
+        //Donovan's segment
+        //Ask the question
+        cout << "\nClaim: " << claimsDonovan[currentQuestion] << endl;
+        cout << "\nTwo guardians block this path. One tells only truths, the other only lies.\nThey will only answer questions related to the claim above.\n" << endl;
+        cout << "Your question options are: " << questionsDonovan[currentQuestion] << endl;
+
+        cout << "Enter either \" 1 \" \" 2 \" or \" 3 \" ";
+
+        //Give the player answers
+        bool questionRepeat = true;
+        while (questionRepeat == true) {
+          cin >> playerInput;
+
+          if (playerInput == "1") {
+            cout << answersDonovan[currentQuestion][0] << endl;
+            questionRepeat = false;
+            questionCount += 1;
+          }
+          else if (playerInput == "2") {
+            cout << answersDonovan[currentQuestion][1] << endl;
+            questionRepeat = false;
+            questionCount += 1;
+          }
+          else if (playerInput == "3") {
+            cout << answersDonovan[currentQuestion][2] << endl;
+            questionRepeat = false;
+            questionCount += 1;
+          }
+          else {
+            cout << "Please enter either 1, 2 or 3." << endl;
+          }
+        }
 
           //Give the player the option to choose which path to take
           cout << "\nNow, choose which sentinel has told the truth (1 or 2)." << endl;
@@ -256,8 +291,9 @@ int main()
             }
           }
         }
-        else {
 
+        else {
+        //Kenny's segment
         //Ask the question
         cout << "\nClaim: " << claimsKenny[currentQuestion] << endl;
         cout << "\nTwo guardians block this path. One tells only truths, the other only lies.\nThey will only answer questions related to the claim above.\n" << endl;
@@ -314,7 +350,7 @@ int main()
         // Ask the player for an input to continue the path
         if (playerScore < 6 && questionCount < 6) {
           string continueInput = "q";
-          cout << "\n Enter \" c \" to continue the path ";
+          cout << "\nEnter \" c \" to continue the path ";
           while (continueInput != "c") {
             cin >> continueInput;
             if (continueInput != "c") {
