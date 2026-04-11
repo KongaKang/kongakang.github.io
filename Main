@@ -151,39 +151,39 @@ int main()
     // Two-dimentional vector storing the answers to each person's question
 
     vector<vector<string>> answersEthan = {
-      {"Sentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\"", "Sentinel 1 answers: \"Mexico.\" Sentinel 2 answers: \"Paraguay.\"", "Sentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\""},
-      {"Sentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\"", "Sentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\"", "Sentinel 1 answers: \"No.\" Sentinel 2 answers: \"Yes.\""},
-      {"Sentinel 1 answers: \"No.\" Sentinel 2 answers: \"Yes.\"", "Sentinel 1 answers: \"No.\" Sentinel 2 answers: \"Yes.\"", "Sentinel 1 answers: \"No.\" Sentinel 2 answers: \"Yes.\""},
+      {"\nSentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\"", "Sentinel 1 answers: \"Mexico.\" Sentinel 2 answers: \"Paraguay.\"", "Sentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\""},
+      {"\nSentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\"", "Sentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\"", "Sentinel 1 answers: \"No.\" Sentinel 2 answers: \"Yes.\""},
+      {"\nSentinel 1 answers: \"No.\" Sentinel 2 answers: \"Yes.\"", "Sentinel 1 answers: \"No.\" Sentinel 2 answers: \"Yes.\"", "Sentinel 1 answers: \"No.\" Sentinel 2 answers: \"Yes.\""},
     };
 
     vector<vector<string>> answersDonovan = {
-      {"Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\""},
-      {"Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\""},
-      {"Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\""},
+      {"\nSentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\""},
+      {"\nSentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\""},
+      {"\nSentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\""},
     };
 
     vector<vector<string>> answersGiovanni = {
-      {"Sentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No .\"", "Sentinel 1 answers: \"Mexico.\" Sentinel 2 answers: \"He has not visited any.\"", "Sentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\""},
-      {"Sentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\"", "Sentinel 1 answers: \"Studying.\" Sentinel 2 answers: \"Gaming.\"", "Sentinel 1 answers: \"3.\" Sentinel 2 answers: \"0.\""},
-      {"Sentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\"", "Sentinel 1 answers: \"History.\" Sentinel 2 answers: \"Math.\"", "Sentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\""},
+      {"\nSentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No .\"", "Sentinel 1 answers: \"Mexico.\" Sentinel 2 answers: \"He has not visited any.\"", "Sentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\""},
+      {"\nSentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\"", "Sentinel 1 answers: \"Studying.\" Sentinel 2 answers: \"Gaming.\"", "Sentinel 1 answers: \"3.\" Sentinel 2 answers: \"0.\""},
+      {"\nSentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\"", "Sentinel 1 answers: \"History.\" Sentinel 2 answers: \"Math.\"", "Sentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\""},
     };
 
     vector<vector<string>> answersMohammed = {
-      {"Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\""},
-      {"Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\""},
-      {"Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\""},
+      {"\nSentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\""},
+      {"\nSentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\""},
+      {"\nSentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\""},
     };
 
     vector<vector<string>> answersVictor = {
-      {"Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\""},
-      {"Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\""},
-      {"Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\""},
+      {"\nSentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\""},
+      {"\nSentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\""},
+      {"\nSentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\""},
     };
 
     vector<vector<string>> answersKenny = {
-      {"Sentinel 1 answers: \"HipHop.\" Sentinel 2 answers: \"Breakdance.\"", "Sentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\"", "Sentinel 1 answers: \"Every now and then.\" Sentinel 2 answers: \"Everyday.\""},
-      {"Sentinel 1 answers: \"Cooking.\" Sentinel 2 answers: \"Gaming.\"", "Sentinel 1 answers: \"Very entertaining.\" Sentinel 2 answers: \"He doesnt even speak a word.\"", "Sentinel 1 answers: \"No, he doesn't even have social media.\" Sentinel 2 answers: \"Yes, he is also a youtuber.\""},
-      {"Sentinel 1 answers: \"Drivers should stay away.\" Sentinel 2 answers: \"Yes, he doesn't even speed.\"", "Sentinel 1 answers: \"There was no accident.\" Sentinel 2 answers: \"He was.\"", "Sentinel 1 answers: \"Not a scratch.\" Sentinel 2 answers: \"A whole door is missing.\""},
+      {"\nSentinel 1 answers: \"HipHop.\" Sentinel 2 answers: \"Breakdance.\"", "Sentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\"", "Sentinel 1 answers: \"Every now and then.\" Sentinel 2 answers: \"Everyday.\""},
+      {"\nSentinel 1 answers: \"Cooking.\" Sentinel 2 answers: \"Gaming.\"", "Sentinel 1 answers: \"Very entertaining.\" Sentinel 2 answers: \"He doesnt even speak a word.\"", "Sentinel 1 answers: \"No, he doesn't even have social media.\" Sentinel 2 answers: \"Yes, he is also a youtuber.\""},
+      {"\nSentinel 1 answers: \"Drivers should stay away.\" Sentinel 2 answers: \"Yes, he doesn't even speed.\"", "Sentinel 1 answers: \"There was no accident.\" Sentinel 2 answers: \"He was.\"", "Sentinel 1 answers: \"Not a scratch.\" Sentinel 2 answers: \"A whole door is missing.\""},
     };
 
     srand(time(0));
