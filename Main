@@ -130,6 +130,12 @@ int main()
       "\n1. Has Giovanni fallen asleep in class?\n2. Which class did Giovanni fall asleep in?\n3. Did a teacher ever wake Giovanni up?",
     };
 
+    vector<string> questionsMohammed = {
+      "\n1. \n2. \n3.",
+      "\n1. \n2. \n3.",
+      "\n1. \n2. \n3.",
+    };
+
     vector<string> questionsVictor = {
       "\n1. \n2. \n3.",
       "\n1. \n2. \n3.",
@@ -160,6 +166,12 @@ int main()
       {"Sentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No .\"", "Sentinel 1 answers: \"Mexico.\" Sentinel 2 answers: \"He has not visited any.\"", "Sentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\""},
       {"Sentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\"", "Sentinel 1 answers: \"Studying.\" Sentinel 2 answers: \"Gaming.\"", "Sentinel 1 answers: \"3.\" Sentinel 2 answers: \"0.\""},
       {"Sentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\"", "Sentinel 1 answers: \"History.\" Sentinel 2 answers: \"Math.\"", "Sentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\""},
+    };
+
+    vector<vector<string>> answersMohammed = {
+      {"Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\""},
+      {"Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\""},
+      {"Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\""},
     };
 
     vector<vector<string>> answersVictor = {
