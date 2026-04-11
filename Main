@@ -421,6 +421,61 @@ int main()
           }
         }
 
+        else if (questionCount == 4) {
+        //Victor's segment
+        //Ask the question
+        cout << "\nClaim: " << claimsVictor[currentQuestion] << endl;
+        cout << "\nTwo guardians block this path. One tells only truths, the other only lies.\nThey will only answer questions related to the claim above.\n" << endl;
+        cout << "Your question options are: " << questionsVictor[currentQuestion] << endl;
+
+        cout << "Enter either \" 1 \" \" 2 \" or \" 3 \" ";
+
+        //Give the player answers
+        bool questionRepeat = true;
+        while (questionRepeat == true) {
+          cin >> playerInput;
+
+          if (playerInput == "1") {
+            cout << answersVictor[currentQuestion][0] << endl;
+            questionRepeat = false;
+            questionCount += 1;
+          }
+          else if (playerInput == "2") {
+            cout << answersVictor[currentQuestion][1] << endl;
+            questionRepeat = false;
+            questionCount += 1;
+          }
+          else if (playerInput == "3") {
+            cout << answersVictor[currentQuestion][2] << endl;
+            questionRepeat = false;
+            questionCount += 1;
+          }
+          else {
+            cout << "Please enter either 1, 2 or 3." << endl;
+          }
+        }
+
+          //Give the player the option to choose which path to take
+          cout << "\nNow, choose which sentinel has told the truth (1 or 2)." << endl;
+          bool pathRepeat = true;
+          while (pathRepeat == true) {
+            cin >> playerInput;
+
+            if (playerInput == "1") {
+              playerScore += 1;
+              cout << "You have chosen correctly. Your current score is: " << playerScore << endl;
+              pathRepeat = false;
+            }
+            else if (playerInput == "2") {
+              cout << "You have chosen incorrectly. Your current score is: " << playerScore << endl;
+              pathRepeat = false;
+            }
+            else {
+              cout << "Please enter either 1 or 2." << endl;
+            }
+          }
+        }
+
         else {
         //Kenny's segment
         //Ask the question
