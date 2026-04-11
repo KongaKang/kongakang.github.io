@@ -97,8 +97,8 @@ int main()
 
     vector<string> questions = {
       "\n1. Has Ethan Sovereign gone skydiving?\n2. Where did Ethan Sovereign go skydiving?\n3. Did Ethan Sovereign survive the fall?",
-      "\n1. Did Ethan Sovereign wear glasses yesterday?\n2. Does Ethan Sovereign wear glasses?\n3. ",
-      "\n1. Have you seen Ethan Sovereign do a double backflip??\n2. Did Ethan Sovereign do a double backflip yesterday?\n3. Can Ethan Sovereign do a double backflip?",
+      "\n1. Did Ethan Sovereign wear glasses yesterday?\n2. Does Ethan Sovereign wear glasses?\n3. Does he wear his glasses on his wrist?",
+      "\n1. Can Ethan Sovereign do an octuple backflip as well?\n2. Did Ethan Sovereign do a double backflip yesterday?\n3. Can Ethan Sovereign do a double backflip?",
       "\n1. What is Donovan Stukes's favorite food to cook?\n2. Did Donovan Stukes cook yesterday?\n3. Does Donovan Stukes know how to cook?",
       "\n1. \n2. \n3.",
       "\n1. \n2. \n3.",
@@ -115,7 +115,7 @@ int main()
 
     vector<vector<string>> answers = {
       {"Sentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\"", "Sentinel 1 answers: \"Mexico.\" Sentinel 2 answers: \"Paraguay.\"", "Sentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\""},
-      {"Sentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\"", "Sentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\"", "Sentinel 1 answers: \".\" Sentinel 2 answers: \".\""},
+      {"Sentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\"", "Sentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\"", "Sentinel 1 answers: \"No.\" Sentinel 2 answers: \"Yes.\""},
       {"Sentinel 1 answers: \"No.\" Sentinel 2 answers: \"Yes.\"", "Sentinel 1 answers: \"No.\" Sentinel 2 answers: \"Yes.\"", "Sentinel 1 answers: \"No.\" Sentinel 2 answers: \"Yes.\""},
       {"Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\""},
       {"Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\""},
