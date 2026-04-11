@@ -74,7 +74,7 @@ int main()
 
     // One-dimentional vector storing the claims asserted in each scenario
 
-    vector<string> claims = {
+    vector<string> claimsEthan = {
     "Ethan Sovereign has gone skydiving.",
     "Ethan Sovereign wears glasses.",
     "Ethan Sovereign can do a double backflip.",
