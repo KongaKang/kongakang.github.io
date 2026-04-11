@@ -311,6 +311,17 @@ int main()
           }
         }
 
+        // Ask the player for an input to continue the path
+        if (playerScore < 6 && questionCount < 6) {
+          string continueInput = "q";
+          cout << "\n Enter \" c \" to continue the path ";
+          while (continueInput != "c") {
+            cin >> continueInput;
+            if (continueInput != "c") {
+              cout << "\nPlease enter \" c \" to continue the path ";
+            }
+          }
+        }
       }
 
       // Give player final score
