@@ -25,6 +25,10 @@ Giovanni Vega: Giovanni Vega has fallen asleep in class (Answer: True)
 Mohammed Ahmed: Mohammed Ahmed knows how to swim (Answer: FALSE)
 Mohammed Ahmed: Mohammed Ahmed has played video games for 5 hours straight (Answer: TRUE)
 Mohammed Ahmed: Mohammed Ahmed knows more than 4 languages (Answer: TRUE)
+
+Kenny Chanya is part of a dance club. (Answer: True)
+Kenny Chanya is a twitch streamer (Answer: True)
+Kenny Chanya has gotten into a car accident before (Answer: False)
 *******************************************************************************/
 
 
@@ -48,7 +52,8 @@ int main()
     cout << " - Donovan Stukes\n";
     cout << " - Giovanni Vega\n";
     cout << " - Mohammed Ahmed\n";
-    cout << " - Victor Nzekwe\n\n";
+    cout << " - Victor Nzekwe\n";
+    cout << " - Kenny Chanya\n\n";
 
     cout << "Each person has contributed a statement.\n" << endl;
     cout << "Your task is to access the confidential files hidden within this program." << endl;
@@ -83,7 +88,10 @@ int main()
     "Mohammed Ahmed knows more than 4 languages.",
     "Victor Nzekwe has watched more than 30 animes.",
     "Victor Nzekwe has a 39 inch verticle jump.",
-    "Victor Nzekwe is Jamaican."
+    "Victor Nzekwe is Jamaican.",
+    "Kenny Chanya is part of a dance club.", 
+    "Kenny Chanya is a twitch streamer", 
+    "Kenny Chanya has gotten into a car accident before." 
 
     };
 
@@ -100,9 +108,9 @@ int main()
       "\n1. \n2. \n3.",
       "\n1. \n2. \n3.",
       "\n1. \n2. \n3.",
-      "\n1. \n2. \n3.",
-      "\n1. \n2. \n3.",
-      "\n1. \n2. \n3."
+      "\n1. What kind of dancing does Kenny do?\n2. Does he like dancing?\n3. How often does he dance?",
+      "\n1. What does Kenny stream?\n2. How entertaining is Kenny?\n3. Does Kenny like making content?",
+      "\n1. Is he a good driver? \n2. Who's was at fault of the accident?\n3. What's the condition of his car?"
     };
 
     vector<vector<string>> answers = {
@@ -118,9 +126,9 @@ int main()
       {"Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\""},
       {"Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\""},
       {"Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\""},
-      {"Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\""},
-      {"Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\""},
-      {"Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\""},
+      {"Sentinel 1 answers: \"HipHop.\" Sentinel 2 answers: \"Breakdance.\"", "Sentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\"", "Sentinel 1 answers: \"Every now and then.\" Sentinel 2 answers: \"Everyday.\""},
+      {"Sentinel 1 answers: \"Cooking.\" Sentinel 2 answers: \"Gaming.\"", "Sentinel 1 answers: \"Very entertaining.\" Sentinel 2 answers: \"He doesnt even speak a word.\"", "Sentinel 1 answers: \"No, he doesn't even have social media.\" Sentinel 2 answers: \"Yes, he is also a youtuber.\""},
+      {"Sentinel 1 answers: \"Drivers should stay away.\" Sentinel 2 answers: \"Yes, he doesn't even speed.\"", "Sentinel 1 answers: \"There was no accident.\" Sentinel 2 answers: \"He was.\"", "Sentinel 1 answers: \"Not a scratch.\" Sentinel 2 answers: \"A whole door is missing.\""},
     };
 
     srand(time(0));
