@@ -191,52 +191,72 @@ int main()
     int playerScore = 0;
     int questionCount = 0;
     string playerInput = "0";
-    int totalClaims = 15;
 
-    while (playerScore < 6 && questionCount < totalClaims) {
+    while (playerScore < 6 && questionCount < 6) {
       //Give the player the initial prompt
       cout << "\n=============================================\n";
       cout << "Two guardians block this path. One tells only truths, the other only lies." << endl;
       cout << "Ask the correct question to determine which path to take forward." << endl;
 
       //Determine which question to ask
-      int currentQuestion = (rand() % (totalClaims - questionCount));
+      int currentQuestion = (rand() % (3));
 
-      //Ask the question
-      cout << "\nClaim: " << claims[currentQuestion] << endl;
-      cout << "Two guardians block this path. One tells only truths, the other only lies." << endl;
-      cout << "Your question options are: " << questions[currentQuestion] << endl;
+      //Determine which person the question will focus on
+      if (questionCount == 0) {
 
-      claims.erase(claims.begin() + currentQuestion);
-      questions.erase(questions.begin() + currentQuestion);
-      answers.erase(answers.begin() + currentQuestion);
+        //Ask the question
+        cout << "\nClaim: " << claimsEthan[currentQuestion] << endl;
+        cout << "Two guardians block this path. One tells only truths, the other only lies." << endl;
+        cout << "Your question options are: " << questionsEthan[currentQuestion] << endl;
 
-      cout << "Enter either \" 1 \" \" 2 \" or \" 3 \" ";
+        cout << "Enter either \" 1 \" \" 2 \" or \" 3 \" ";
 
-      bool questionRepeat = true;
-      while (questionRepeat == true) {
-        cin >> playerInput;
+        //Give the player answers
+        bool questionRepeat = true;
+        while (questionRepeat == true) {
+          cin >> playerInput;
 
-        if (playerInput == "1") {
-          cout << answers[currentQuestion][1] << endl;
-          questionRepeat = false;
-          questionCount += 1;
+          if (playerInput == "1") {
+            cout << answersEthan[currentQuestion][1] << endl;
+            questionRepeat = false;
+            questionCount += 1;
+          }
+          else if (playerInput == "2") {
+            cout << answersEthan[currentQuestion][2] << endl;
+            questionRepeat = false;
+            questionCount += 1;
+          }
+          else if (playerInput == "3") {
+            cout << answersEthan[currentQuestion][3] << endl;
+            questionRepeat = false;
+            questionCount += 1;
+          }
+          else {
+            cout << "Please enter either 1, 2 or 3." << endl;
+          }
+
+          //Give the player the option to choose which path to take
+          cout << "\nNow, choose which sentinel has told the truth (1 or 2)." << endl;
+          bool pathRepeat = true;
+          while (pathRepeat == true) {
+          cin >> playerInput;
+
+          if (playerInput == "1") {
+            playerScore += 1;
+            cout << "You have chosen correctly. Your current score is: " << playerScore << endl;
+            pathRepeat = false;
+          }
+          else if (playerInput == "2") {
+            cout << "You have chosen incorrectly. Your current score is: " << playerScore << endl;
+            pathRepeat = false;
+          }
+          else {
+            cout << "Please enter either 1 or 2." << endl;
+          }
         }
-        else if (playerInput == "2") {
-          cout << answers[currentQuestion][2] << endl;
-          questionRepeat = false;
-          questionCount += 1;
-        }
-        else if (playerInput == "3") {
-          cout << answers[currentQuestion][3] << endl;
-          questionRepeat = false;
-          questionCount += 1;
-        }
-        else {
-          cout << "Please enter either 1, 2 or 3." << endl;
-        }
-        
       }
+
+      // Give player final score
       cout << "\n=============================================\n";
       if (playerScore >= 6) {
         cout << "ACCESS GRANTED!\n";
