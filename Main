@@ -95,19 +95,31 @@ int main()
 
     };
 
-    vector<string> questions = {
+    vector<string> questionsEthan = {
       "\n1. Has Ethan Sovereign gone skydiving?\n2. Where did Ethan Sovereign go skydiving?\n3. Did Ethan Sovereign survive the fall?",
       "\n1. Did Ethan Sovereign wear glasses yesterday?\n2. Does Ethan Sovereign wear glasses?\n3. Does he wear his glasses on his wrist?",
       "\n1. Can Ethan Sovereign do an octuple backflip as well?\n2. Did Ethan Sovereign do a double backflip yesterday?\n3. Can Ethan Sovereign do a double backflip?",
+    };
+
+    vector<string> questionsDonovan {
       "\n1. What is Donovan Stukes's favorite food to cook?\n2. Did Donovan Stukes cook yesterday?\n3. Does Donovan Stukes know how to cook?",
       "\n1. \n2. \n3.",
       "\n1. \n2. \n3.",
+    };
+
+    vector<string> questionsGiovanni {
       "\n1. Has Giovanni ever left the country?\n2. Which country has Giovanni visited?\n3. Has Giovanni Vega ever been on an airplane?",
       "\n1. Has Giovanni pulled an all-nighter?\n2. What was Giovanni doing during it?\n3. How many all-nighters has Giovanni pulled?",
       "\n1. Has Giovanni fallen asleep in class?\n2. Which class did Giovanni fall asleep in?\n3. Did a teacher ever wake Giovanni up?",
+    };
+
+    vector<string> questionsVictor {
       "\n1. \n2. \n3.",
       "\n1. \n2. \n3.",
       "\n1. \n2. \n3.",
+    };
+
+    vector<string> questionsKenny {
       "\n1. What kind of dancing does Kenny do?\n2. Does he like dancing?\n3. How often does he dance?",
       "\n1. What does Kenny stream?\n2. How entertaining is Kenny?\n3. Does Kenny like making content?",
       "\n1. Is he a good driver? \n2. Who was at fault of the accident?\n3. What's the condition of his car?"
