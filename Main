@@ -1,7 +1,7 @@
 /******************************************************************************
 
 The Labyrinth of Truths and Lies Game
-Names: Ethan Sovereign, Donovan Stukes, Giovanni Vega, Mohammed Ahmed, Victor Nzekwe
+Names: Ethan Sovereign, Donovan Stukes, Giovanni Vega, Mohammed Ahmed, Victor Nzekwe, Nithin Suresh
 
 *******************************************************************************/
 
@@ -29,6 +29,10 @@ Mohammed Ahmed: Mohammed Ahmed knows more than 4 languages (Answer: TRUE)
 Kenny Chanya is part of a dance club. (Answer: TRUE)
 Kenny Chanya is a twitch streamer (Answer: TRUE)
 Kenny Chanya has gotten into a car accident before (Answer: FALSE)
+
+Nithin Suresh loves to go swimming. (Answer: TRUE)
+Nithin Suresh plays elden ring (Answer: TRUE)
+Nithin Suresh ran a marathon. (Answer: FALSE)
 *******************************************************************************/
 
 
@@ -107,9 +111,9 @@ int main()
     };
 
     vector<string> claimsNithin = {
-      "",
-      "",
-      ""
+      "Nithin Suresh loves to go swimming.",//TRUE
+      "Nithin Suresh loves to play elden ring.",//TRUE
+      "Nithin Suresh ran a marathon.",//FALSE
     };
 
     vector<string> claimsBraylen = {
@@ -157,9 +161,9 @@ int main()
     };
 
     vector<string> questionsNithin = {
-      "\n1. \n2. \n3.",
-      "\n1. \n2. \n3.",
-      "\n1. \n2. \n3."
+      "\n1. Does Nithin enjoy swimming?\n2. How often does he swim?\n3. Did he swim recently?",
+      "\n1. Does Nithin play Elden Ring?\n2. What platform does he play on?\n3. Does he enjoy difficult games?",
+      "\n1. Has Nithin run long distances?\n2. Did he run a marathon?\n3. Does he enjoy running?"
     };
 
     vector<string> questionsBraylen = {
@@ -207,9 +211,9 @@ int main()
     };
 
     vector<vector<string>> answersNithin = {
-      {"\nSentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\""},
-      {"\nSentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\""},
-      {"\nSentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\""},
+      {"\nSentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\"", "Sentinel 1 answers: \"Yes.\" Sentinel 2 answers: \" No.\"", "Sentinel 1 answers: \"No.\" Sentinel 2 answers: \"Yes.\""},
+      {"\nSentinel 1 answers: \"Often.\" Sentinel 2 answers: \"Never.\"", "Sentinel 1 answers: \"PC.\" Sentinel 2 answers: \"He doesn't play.\"", "Sentinel 1 answers: \"No.\" Sentinel 2 answers: \"Yes.\""},
+      {"\nSentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\"", "Sentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\"", "Sentinel 1 answers: \"No.\" Sentinel 2 answers: \"Yes.\""},
     };
 
     vector<vector<string>> answersBraylen = {
@@ -230,7 +234,7 @@ int main()
     int questionCount = 0;
     string playerInput = "0";
 
-    while (playerScore < 6 && questionCount < 6) {
+    while (playerScore < 7 && questionCount < 7) {
       //Give the player the initial prompt
       cout << "\n=============================================\n";
       cout << "Two guardians block this path. One tells only truths, the other only lies." << endl;
