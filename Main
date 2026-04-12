@@ -147,27 +147,27 @@ int main()
     };
 
     vector<string> questionsGiovanni = {
-      "\n1. Has Giovanni ever left the country?\n2. Which country has Giovanni visited?\n3. Has Giovanni Vega ever been on an airplane?",
-      "\n1. Has Giovanni pulled an all-nighter?\n2. What was Giovanni doing during it?\n3. How many all-nighters has Giovanni pulled?",
+      "\n1. Has Giovanni ever left the country?\n2. Which country has Giovanni visited?\n3. Has Giovanni Vega ever been to his home country?",
+      "\n1. Has Giovanni pulled an all-nighter?\n2. What was Giovanni doing during it?\n3. Has Giovanni pulled eighty all-nighters in a row?",
       "\n1. Has Giovanni fallen asleep in class?\n2. Which class did Giovanni fall asleep in?\n3. Did a teacher ever wake Giovanni up?"
     };
 
     vector<string> questionsMohammed = {
-      "\n1. Can Mohammed Ahmed swim?\n2. Has Mohammed Ahmed ever taken swimming lessons?\n3. Is Mohammed Ahmed afraid of water?",
-      "\n1. Has Mohammed Ahmed played video games for 5 hours straight?\n2. What game did he play?\n3. Does he enjoy long gaming sessions?",
-      "\n1. Does Mohammed Ahmed know more than 4 languages?\n2. How many languages does he know?\n3. Can he speak Arabic?"
+      "\n1. Has Mohammed Ahmed ever swam across the Pacific Ocean?\n2. Has Mohammed Ahmed ever taken swimming lessons?\n3. Is Mohammed Ahmed afraid of water?",
+      "\n1. Has Mohammed Ahmed played video games for 5 hours straight?\n2. What game did he play?\n3. Has Mohammed Ahmed played video games for three hundred hours straight?",
+      "\n1. Does Mohammed Ahmed know more than 4 languages?\n2. Does Mohammed Ahmed know five hundred languages?\n3. Can he speak Arabic?"
     };
 
     vector<string> questionsVictor = {
-      "\n1. Does Victor Nzekwe have a Crunchyroll subscription?\n2. What is Victor Nzekwes favorite anime?\n3. Has Victor Nzekwe ever finished and anime in one day?",
-      "\n1. Does Victor Nzekwe work on his verticle jump?\n2. Does Victor Nzekwe play sports?\n3. Has Victor Nzekwe ever had his verticle jump measured?",
-      "\n1. Has Victor Nzekwe ever gone to Nigeria?\n2. Does Victor Nzekwe speak a nigerian language?\n3. Does Victor Nzekwe dance any native nigerian dances?"
+      "\n1. Does Victor Nzekwe have a Crunchyroll subscription?\n2. What is Victor Nzekwes favorite anime?\n3. Has Victor Nzekwe watched every anime ever made?",
+      "\n1. Does Victor Nzekwe work on his verticle jump?\n2. Does Victor Nzekwe have a two hundred inch vertical jump?\n3. Has Victor Nzekwe ever had his verticle jump measured?",
+      "\n1. Was Victor Nzekwe born in Nigeria before 1900?\n2. Does Victor Nzekwe speak a nigerian language?\n3. Does Victor Nzekwe dance any native nigerian dances?"
     };
 
     vector<string> questionsNithin = {
-      "\n1. Does Nithin enjoy swimming?\n2. How often does he swim?\n3. Did he swim recently?",
-      "\n1. Does Nithin play Elden Ring?\n2. What platform does he play on?\n3. Does he enjoy difficult games?",
-      "\n1. Has Nithin run long distances?\n2. Did he run a marathon?\n3. Does he enjoy running?"
+      "\n1. Will Nithin enjoy swimming one hundred fifty years from now?\n2. How often does he swim?\n3. Did he swim recently?",
+      "\n1. Did Nithin enjoy playing Elden Ring in the year 2000?\n2. What platform does he play on?\n3. Does he enjoy difficult games?",
+      "\n1. Has Nithin run long distances?\n2. Has Nithin ever run ten marathons in a row?\n3. Does Nithin enjoy running?"
     };
 
     vector<string> questionsBraylen = {
@@ -198,26 +198,26 @@ int main()
 
     vector<vector<string>> answersGiovanni = {
       {"\nSentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No .\"", "Sentinel 1 answers: \"Mexico.\" Sentinel 2 answers: \"He has not visited any.\"", "Sentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\""},
-      {"\nSentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\"", "Sentinel 1 answers: \"Studying.\" Sentinel 2 answers: \"Gaming.\"", "Sentinel 1 answers: \"3.\" Sentinel 2 answers: \"0.\""},
+      {"\nSentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\"", "Sentinel 1 answers: \"Studying.\" Sentinel 2 answers: \"Gaming.\"", "Sentinel 1 answers: \"No.\" Sentinel 2 answers: \"Yes.\""},
       {"\nSentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\"", "Sentinel 1 answers: \"History.\" Sentinel 2 answers: \"Math.\"", "Sentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\""},
     };
 
     vector<vector<string>> answersMohammed = {
       {"\nSentinel 1 answers: \"No.\" Sentinel 2 answers: \"Yes.\"", "Sentinel 1 answers: \"No.\" Sentinel 2 answers: \" Yes.\"", "Sentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\""},
-      {"\nSentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\"", "Sentinel 1 answers: \"Fortnite.\" Sentinel 2 answers: \" None.\"", "Sentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\""},
-      {"\nSentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\"", "Sentinel 1 answers: \"5.\" Sentinel 2 answers: \" 2.\"", "Sentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\""},
+      {"\nSentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\"", "Sentinel 1 answers: \"Fortnite.\" Sentinel 2 answers: \" None.\"", "Sentinel 1 answers: \"No.\" Sentinel 2 answers: \"Yes.\""},
+      {"\nSentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\"", "Sentinel 1 answers: \"No.\" Sentinel 2 answers: \"Yes.\"", "Sentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\""},
     };
 
     vector<vector<string>> answersVictor = {
-      {"\nSentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\"", "Sentinel 1 answers: \"HunterXHunter.\" Sentinel 2 answers: \"Vinland Saga.\"", "Sentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\""},
-      {"\nSentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\"", "Sentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\"", "Sentinel 1 answers: \"In Highschool.\" Sentinel 2 answers: \"No.\""},
-      {"\nSentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\"", "Sentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\"", "Sentinel 1 answers: \"A few.\" Sentinel 2 answers: \"No .\""},
+      {"\nSentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\"", "Sentinel 1 answers: \"HunterXHunter.\" Sentinel 2 answers: \"Vinland Saga.\"", "Sentinel 1 answers: \"No.\" Sentinel 2 answers: \"Yes.\""},
+      {"\nSentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\"", "Sentinel 1 answers: \"No.\" Sentinel 2 answers: \"Yes.\"", "Sentinel 1 answers: \"In Highschool.\" Sentinel 2 answers: \"No.\""},
+      {"\nSentinel 1 answers: \"No.\" Sentinel 2 answers: \"Yes.\"", "Sentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\"", "Sentinel 1 answers: \"A few.\" Sentinel 2 answers: \"No .\""},
     };
 
     vector<vector<string>> answersNithin = {
-      {"\nSentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\"", "Sentinel 1 answers: \"Yes.\" Sentinel 2 answers: \" No.\"", "Sentinel 1 answers: \"No.\" Sentinel 2 answers: \"Yes.\""},
-      {"\nSentinel 1 answers: \"Often.\" Sentinel 2 answers: \"Never.\"", "Sentinel 1 answers: \"PC.\" Sentinel 2 answers: \"He doesn't play.\"", "Sentinel 1 answers: \"No.\" Sentinel 2 answers: \"Yes.\""},
-      {"\nSentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\"", "Sentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\"", "Sentinel 1 answers: \"No.\" Sentinel 2 answers: \"Yes.\""},
+      {"\nSentinel 1 answers: \"No.\" Sentinel 2 answers: \"Yes.\"", "Sentinel 1 answers: \"Yes.\" Sentinel 2 answers: \" No.\"", "Sentinel 1 answers: \"No.\" Sentinel 2 answers: \"Yes.\""},
+      {"\nSentinel 1 answers: \"No.\" Sentinel 2 answers: \"Yes.\"", "Sentinel 1 answers: \"PC.\" Sentinel 2 answers: \"He doesn't play.\"", "Sentinel 1 answers: \"No.\" Sentinel 2 answers: \"Yes.\""},
+      {"\nSentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\"", "Sentinel 1 answers: \"No.\" Sentinel 2 answers: \"Yes.\"", "Sentinel 1 answers: \"No.\" Sentinel 2 answers: \"Yes.\""},
     };
 
     vector<vector<string>> answersBraylen = {
