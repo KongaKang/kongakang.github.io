@@ -164,7 +164,7 @@ int main()
     vector<string> questionsVictor = {
       "\n1. Does Victor Nzekwe have a Crunchyroll subscription?\n2. What is Victor Nzekwes favorite anime?\n3. Has Victor Nzekwe ever finished and anime in one day?",
       "\n1. Does Victor Nzekwe work on his verticle jump?\n2. Does Victor Nzekwe play sports?\n3. Has Victor Nzekwe ever had his verticle jump measured?",
-      "\n1. Has Victor Nzekwe ever gone to Nigeria?\n2. Does Victor Nzekwe speak and nigerian language?\n3. Does Victor Nzekwe dance any native nigerian dances?"
+      "\n1. Has Victor Nzekwe ever gone to Nigeria?\n2. Does Victor Nzekwe speak a nigerian language?\n3. Does Victor Nzekwe dance any native nigerian dances?"
     };
 
     vector<string> questionsNithin = {
@@ -212,9 +212,9 @@ int main()
     };
 
     vector<vector<string>> answersVictor = {
-      {"\nSentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\""},
-      {"\nSentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\""},
-      {"\nSentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\""},
+      {"\nSentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\"", "Sentinel 1 answers: \"HunterXHunter.\" Sentinel 2 answers: \"Vinland Saga.\"", "Sentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\""},
+      {"\nSentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\"", "Sentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\"", "Sentinel 1 answers: \"In Highschool.\" Sentinel 2 answers: \"No.\""},
+      {"\nSentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\"", "Sentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\"", "Sentinel 1 answers: \"A few.\" Sentinel 2 answers: \"No .\""},
     };
 
     vector<vector<string>> answersNithin = {
