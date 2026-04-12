@@ -149,9 +149,9 @@ int main()
     };
 
     vector<string> questionsMohammed = {
-      "\n1. \n2. \n3.",
-      "\n1. \n2. \n3.",
-      "\n1. \n2. \n3."
+      "\n1. Can Mohammed Ahmed swim?\n2. Has Mohammed Ahmed ever taken swimming lessons?\n3. Is Mohammed Ahmed afraid of water?",
+      "\n1. Has Mohammed Ahmed played video games for 5 hours straight?\n2. What game did he play?\n3. Does he enjoy long gaming sessions?",
+      "\n1. Does Mohammed Ahmed know more than 4 languages?\n2. How many languages does he know?\n3. Can he speak Arabic?"
     };
 
     vector<string> questionsVictor = {
@@ -199,9 +199,9 @@ int main()
     };
 
     vector<vector<string>> answersMohammed = {
-      {"\nSentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\""},
-      {"\nSentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\""},
-      {"\nSentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\""},
+      {"\nSentinel 1 answers: \"No.\" Sentinel 2 answers: \"Yes.\"", "Sentinel 1 answers: \"No.\" Sentinel 2 answers: \" Yes.\"", "Sentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\""},
+      {"\nSentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\"", "Sentinel 1 answers: \"Fortnite.\" Sentinel 2 answers: \" None.\"", "Sentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\""},
+      {"\nSentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\"", "Sentinel 1 answers: \"5.\" Sentinel 2 answers: \" 2.\"", "Sentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\""},
     };
 
     vector<vector<string>> answersVictor = {
