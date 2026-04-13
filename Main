@@ -121,9 +121,9 @@ int main()
     };
 
     vector<string> claimsBraylen = {
-      "Braylen T has traveled out of the country.",
-      "Braylen T has been to multiple concerts.",
-      "Braylen T is the youngest sibling in his family."
+      "Braylen T has traveled out of the country.", //FALSE
+      "Braylen T has been to multiple concerts.", //TRUE
+      "Braylen T is the youngest sibling in his family." //TRUE
     };
 
     vector<string> claimsKenny = {
@@ -171,15 +171,15 @@ int main()
     };
 
     vector<string> questionsBraylen = {
-      "\n1. Has Braylen T ever been on a plane?\n2. Has Braylen T ever had a foreign meal?\n3. Has Braylen T traveled out of the country?",
-      "\n1. What was the first concert Braylen T went to?\n2. Does Braylen T enjoy live music?\n3. Has Braylen T been to multiple concerts?",
-      "\n1. Does Braylen T have older siblings?\n2. How many siblings does Braylen T have?\n3. Is Braylen T the youngest sibling in his family?"
+      "\n1. Has Braylen T ever been on a plane?\n2. Has Braylen T ever had a foreign meal?\n3. Has Braylen T ever been to space?",
+      "\n1. Has Bralen T been to ten thousand concerts?\n2. Does Braylen T enjoy live music inddors or outdoors?\n3. Has Braylen T been to multiple concerts?",
+      "\n1. Does Braylen T have older siblings?\n2. Does Braylen T have a sibling that is eighty years younger than him?\n3. Is Braylen T the youngest sibling in his family?"
     };
 
     vector<string> questionsKenny = {
-      "\n1. What kind of dancing does Kenny do?\n2. Does he like dancing?\n3. How often does he dance?",
-      "\n1. What does Kenny stream?\n2. How entertaining is Kenny?\n3. Does Kenny like making content?",
-      "\n1. Is he a good driver? \n2. Who was at fault of the accident?\n3. What's the condition of his car?"
+      "\n1. What kind of dancing does Kenny do?\n2. Does Kenny like dancing?\n3. Has Kenny been part of a dance club for sixty years?",
+      "\n1. What does Kenny stream?\n2. How entertaining is Kenny?\n3. Does Kenny have sixty trillion followers on Twitch?",
+      "\n1. Did he survive the crash? \n2. Who was at fault of the accident?\n3. What's the condition of his car?"
     };
 
     // Two-dimentional vector storing the answers to each person's question
@@ -222,14 +222,14 @@ int main()
 
     vector<vector<string>> answersBraylen = {
       {"\nSentinel 1 answers: \"No.\" Sentinel 2 answers: \"Yes.\"", "Sentinel 1 answers: \"He has not, he has never left the country.\" Sentinel 2 answers: \"He has tried many.\"", "Sentinel 1 answers: \"No.\" Sentinel 2 answers: \"Yes.\""},
-      {"\nSentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\"", "Sentinel 1 answers: \"He prefers outdoor.\" Sentinel 2 answers: \"He prefers indoor.\"", "Sentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\""},
-      {"\nSentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\"", "Sentinel 1 answers: \"He has older siblings above him.\" Sentinel 2 answers: \"He has younger siblings below him.\"", "Sentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\""},
+      {"\nSentinel 1 answers: \"No.\" Sentinel 2 answers: \"Yes.\"", "Sentinel 1 answers: \"He prefers outdoor.\" Sentinel 2 answers: \"He prefers indoor.\"", "Sentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\""},
+      {"\nSentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\"", "Sentinel 1 answers: \"No.\" Sentinel 2 answers: \"Yes.\"", "Sentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\""},
     };
 
     vector<vector<string>> answersKenny = {
-      {"\nSentinel 1 answers: \"HipHop.\" Sentinel 2 answers: \"Breakdance.\"", "Sentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\"", "Sentinel 1 answers: \"Every now and then.\" Sentinel 2 answers: \"Everyday.\""},
-      {"\nSentinel 1 answers: \"Cooking.\" Sentinel 2 answers: \"Gaming.\"", "Sentinel 1 answers: \"Very entertaining.\" Sentinel 2 answers: \"He doesnt even speak a word.\"", "Sentinel 1 answers: \"No, he doesn't even have social media.\" Sentinel 2 answers: \"Yes, he is also a youtuber.\""},
-      {"\nSentinel 1 answers: \"Drivers should stay away.\" Sentinel 2 answers: \"Yes, he doesn't even speed.\"", "Sentinel 1 answers: \"There was no accident.\" Sentinel 2 answers: \"He was.\"", "Sentinel 1 answers: \"Not a scratch.\" Sentinel 2 answers: \"A whole door is missing.\""},
+      {"\nSentinel 1 answers: \"HipHop.\" Sentinel 2 answers: \"Breakdance.\"", "Sentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\"", "Sentinel 1 answers: \"No.\" Sentinel 2 answers: \"Yes.\""},
+      {"\nSentinel 1 answers: \"Cooking.\" Sentinel 2 answers: \"Gaming.\"", "Sentinel 1 answers: \"Very entertaining.\" Sentinel 2 answers: \"He doesnt even speak a word.\"", "Sentinel 1 answers: \"No.\" Sentinel 2 answers: \"Yes.\""},
+      {"\nSentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\"", "Sentinel 1 answers: \"There was no accident.\" Sentinel 2 answers: \"He was.\"", "Sentinel 1 answers: \"Not a scratch.\" Sentinel 2 answers: \"A whole door is missing.\""},
     };
 
     srand(time(0));
