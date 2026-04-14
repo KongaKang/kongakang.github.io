@@ -188,9 +188,9 @@ int main()
     // Two-dimentional vector storing the answers to each person's question
 
     vector<vector<string>> answersEthan = {
-      {"\nSentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\"", "Sentinel 1 answers: \"Mexico.\" Sentinel 2 answers: \"Paraguay.\"", "Sentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\""},
-      {"\nSentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\"", "Sentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\"", "Sentinel 1 answers: \"No.\" Sentinel 2 answers: \"Yes.\""},
-      {"\nSentinel 1 answers: \"No.\" Sentinel 2 answers: \"Yes.\"", "Sentinel 1 answers: \"No.\" Sentinel 2 answers: \"Yes.\"", "Sentinel 1 answers: \"No.\" Sentinel 2 answers: \"Yes.\""},
+      {"\nSentinel 1 answers: \"No.\" Sentinel 2 answers: \"Yes.\"", "Sentinel 1 answers: \"Paraguay.\" Sentinel 2 answers: \"Mexico.\"", "Sentinel 1 answers: \"No.\" Sentinel 2 answers: \"Yes.\""},
+      {"\nSentinel 1 answers: \"No.\" Sentinel 2 answers: \"Yes.\"", "Sentinel 1 answers: \"No.\" Sentinel 2 answers: \"Yes.\"", "Sentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\""},
+      {"\nSentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\"", "Sentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\"", "Sentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\""},
     };
 
     vector<vector<string>> answersDonovan = {
@@ -200,9 +200,9 @@ int main()
     };
 
     vector<vector<string>> answersGiovanni = {
-      {"\nSentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No .\"", "Sentinel 1 answers: \"Mexico.\" Sentinel 2 answers: \"He has not visited any.\"", "Sentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\""},
-      {"\nSentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\"", "Sentinel 1 answers: \"Studying.\" Sentinel 2 answers: \"Gaming.\"", "Sentinel 1 answers: \"No.\" Sentinel 2 answers: \"Yes.\""},
-      {"\nSentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\"", "Sentinel 1 answers: \"History.\" Sentinel 2 answers: \"Math.\"", "Sentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\""},
+      {"\nSentinel 1 answers: \"No.\" Sentinel 2 answers: \"Yes.\"", "Sentinel 1 answers: \"He has not visited any.\" Sentinel 2 answers: \"Mexico.\"", "Sentinel 1 answers: \"No.\" Sentinel 2 answers: \"Yes.\""},
+      {"\nSentinel 1 answers: \"No.\" Sentinel 2 answers: \"Yes.\"", "Sentinel 1 answers: \"Gaming.\" Sentinel 2 answers: \"Studying.\"", "Sentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\""},
+      {"\nSentinel 1 answers: \"No.\" Sentinel 2 answers: \"Yes.\"", "Sentinel 1 answers: \"Math.\" Sentinel 2 answers: \"History.\"", "Sentinel 1 answers: \"No.\" Sentinel 2 answers: \"Yes.\""},
     };
 
     vector<vector<string>> answersMohammed = {
@@ -218,9 +218,9 @@ int main()
     };
 
     vector<vector<string>> answersNithin = {
-      {"\nSentinel 1 answers: \"No.\" Sentinel 2 answers: \"Yes.\"", "Sentinel 1 answers: \"Yes.\" Sentinel 2 answers: \" No.\"", "Sentinel 1 answers: \"No.\" Sentinel 2 answers: \"Yes.\""},
-      {"\nSentinel 1 answers: \"No.\" Sentinel 2 answers: \"Yes.\"", "Sentinel 1 answers: \"PC.\" Sentinel 2 answers: \"He doesn't play.\"", "Sentinel 1 answers: \"No.\" Sentinel 2 answers: \"Yes.\""},
-      {"\nSentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\"", "Sentinel 1 answers: \"No.\" Sentinel 2 answers: \"Yes.\"", "Sentinel 1 answers: \"No.\" Sentinel 2 answers: \"Yes.\""},
+      {"\nSentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\"", "Sentinel 1 answers: \"No.\" Sentinel 2 answers: \" Yes.\"", "Sentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\""},
+      {"\nSentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\"", "Sentinel 1 answers: \"He doesn't play.\" Sentinel 2 answers: \"PC.\"", "Sentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\""},
+      {"\nSentinel 1 answers: \"No.\" Sentinel 2 answers: \"Yes.\"", "Sentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\"", "Sentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\""},
     };
 
     vector<vector<string>> answersBraylen = {
@@ -294,13 +294,13 @@ int main()
           cin >> playerInput;
 
           if (playerInput == "1") {
-            playerScore += 1;
-            cout << "You have chosen correctly. Your current score is: " << playerScore << endl;
-            cout << "First letter of secret phrase revealed: \"O\"" << endl;
+            cout << "You have chosen incorrectly. Your current score is: " << playerScore << endl;
             pathRepeat = false;
           }
           else if (playerInput == "2") {
-            cout << "You have chosen incorrectly. Your current score is: " << playerScore << endl;
+            playerScore += 1;
+            cout << "You have chosen correctly. Your current score is: " << playerScore << endl;
+            cout << "First letter of secret phrase revealed: \"O\"" << endl;
             pathRepeat = false;
           }
           else {
@@ -406,13 +406,14 @@ int main()
             cin >> playerInput;
 
             if (playerInput == "1") {
+              cout << "You have chosen incorrectly. Your current score is: " << playerScore << endl;
+              pathRepeat = false;
+              
+            }
+            else if (playerInput == "2") {
               playerScore += 1;
               cout << "You have chosen correctly. Your current score is: " << playerScore << endl;
               cout << "Third letter of secret phrase revealed: \"S\"" << endl;
-              pathRepeat = false;
-            }
-            else if (playerInput == "2") {
-              cout << "You have chosen incorrectly. Your current score is: " << playerScore << endl;
               pathRepeat = false;
             }
             else {
@@ -573,14 +574,14 @@ int main()
             cin >> playerInput;
 
             if (playerInput == "1") {
-              playerScore += 1;
-              cout << "You have chosen correctly. Your current score is: " << playerScore << endl;
-              cout << "Sixth letter of secret phrase revealed: \"R\"" << endl;
-              pathRepeat = false;
+                cout << "You have chosen incorrectly. Your current score is: " << playerScore << endl;
+                pathRepeat = false;
             }
             else if (playerInput == "2") {
-              cout << "You have chosen incorrectly. Your current score is: " << playerScore << endl;
-              pathRepeat = false;
+                playerScore += 1;
+                cout << "You have chosen correctly. Your current score is: " << playerScore << endl;
+                cout << "Sixth letter of secret phrase revealed: \"R\"" << endl;
+                pathRepeat = false;
             }
             else {
               cout << "Please enter either 1 or 2." << endl;
