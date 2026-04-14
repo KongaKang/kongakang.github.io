@@ -71,6 +71,9 @@ int main()
     cout << "answering questions related to the personal information of your peers." << endl;
     cout << "If you can answer enough of the questions correctly, you will be given" << endl;
     cout << "access to the files you seek.\n" << endl;
+    cout << "With each question answered correctly, you will be given one letter to a key phrase." << endl;
+    cout << "If you do not answer enough questions correctly, you will be given one final chance to access the files." << endl;
+    cout << "By correctly inputting the key phrase, you will gain access to the files." << endl;
     cout << "Your job is to uncover the truth... if you can.\n\n";
 
     string beginChoice = "m";
@@ -141,7 +144,7 @@ int main()
     };
 
     vector<string> questionsDonovan = {
-      "\n1. What is Donovan Stukes's favorite food to cook?\n2. Did Donovan Stukes cook yesterday?\n3. Does Donovan Stukes know how to cook?",
+      "\n1. What is Donovan Stukes's favorite food to cook?\n2. Did Donovan Stukes cook yesterday?\n3. Has Donovan Stukes ever cooked a five quintillion dollar meal?",
       "\n1. Did Donovan Stukes meet the famous rapper Skilla Baby?\n2. Did Skilla Baby perform a double mastectomy when Donovan Stukes met him?\n3. Did Donovan Stukes think Skilla Baby was cool?",
       "\n1. Did Donovan Stukes bench two thousand pounds last time he was at the gym?\n2. Does Donovan Stukes enjoy going to the gym?\n3. Is Donovan Stukes active in the gym?"
     };
@@ -293,6 +296,7 @@ int main()
           if (playerInput == "1") {
             playerScore += 1;
             cout << "You have chosen correctly. Your current score is: " << playerScore << endl;
+            cout << "First letter of secret phrase revealed: \"O\"" << endl;
             pathRepeat = false;
           }
           else if (playerInput == "2") {
@@ -348,6 +352,7 @@ int main()
             if (playerInput == "1") {
               playerScore += 1;
               cout << "You have chosen correctly. Your current score is: " << playerScore << endl;
+              cout << "Second letter of secret phrase revealed: \"B\"" << endl;
               pathRepeat = false;
             }
             else if (playerInput == "2") {
@@ -403,6 +408,7 @@ int main()
             if (playerInput == "1") {
               playerScore += 1;
               cout << "You have chosen correctly. Your current score is: " << playerScore << endl;
+              cout << "Third letter of secret phrase revealed: \"S\"" << endl;
               pathRepeat = false;
             }
             else if (playerInput == "2") {
@@ -458,6 +464,7 @@ int main()
             if (playerInput == "1") {
               playerScore += 1;
               cout << "You have chosen correctly. Your current score is: " << playerScore << endl;
+              cout << "Fourth letter of secret phrase revealed: \"C\"" << endl;
               pathRepeat = false;
             }
             else if (playerInput == "2") {
@@ -513,6 +520,7 @@ int main()
             if (playerInput == "1") {
               playerScore += 1;
               cout << "You have chosen correctly. Your current score is: " << playerScore << endl;
+              cout << "Fifth letter of secret phrase revealed: \"U\"" << endl;
               pathRepeat = false;
             }
             else if (playerInput == "2") {
@@ -567,6 +575,7 @@ int main()
             if (playerInput == "1") {
               playerScore += 1;
               cout << "You have chosen correctly. Your current score is: " << playerScore << endl;
+              cout << "Sixth letter of secret phrase revealed: \"R\"" << endl;
               pathRepeat = false;
             }
             else if (playerInput == "2") {
@@ -623,6 +632,7 @@ int main()
             if (playerInput == "1") {
               playerScore += 1;
               cout << "You have chosen correctly. Your current score is: " << playerScore << endl;
+              cout << "Seventh letter of secret phrase revealed: \"E\"" << endl;
               pathRepeat = false;
             }
             else if (playerInput == "2") {
@@ -678,6 +688,7 @@ int main()
             if (playerInput == "1") {
               playerScore += 1;
               cout << "You have chosen correctly. Your current score is: " << playerScore << endl;
+              cout << "Eighth letter of secret phrase revealed: \"D\"" << endl;
               pathRepeat = false;
             }
             else if (playerInput == "2") {
@@ -705,12 +716,29 @@ int main()
 
       // Give player final score
       cout << "\n=============================================\n";
-      if (playerScore >= 6) {
+      if (playerScore >= 8) {
         cout << "ACCESS GRANTED!\n";
+        cout << "The full hidden phrase was: OBSCURED" << endl;
         cout << "You have retrieved the confidential files!\n";
-      }   else {
-        cout << "ACCESS DENIED.\n";
-        cout << "You did not answer enough questions correctly.\n";
+      }
+      
+      else {
+            cout << "Not enough sentinels were identified correctly." << endl;
+            cout << "Input the hidden phrase correctly, and you will be grated access." << endl;
+            string phraseGuess = "INCORECT";
+            cout << "Answer: ";
+            cin >> phraseGuess;
+            
+            if (phraseGuess == "OBSCURED") {
+                cout << "ACCESS GRANTED!\n";
+                cout << "The full hidden phrase was: OBSCURED" << endl;
+                cout << "You have retrieved the confidential files!\n";
+            }
+            
+            else {
+                cout << "ACCESS DENIED.\n";
+                cout << "You did not answer enough questions correctly, and did not guess the hidden phrase correctly.\n";
+            }
       }
       cout << "Final score: " << playerScore << " correct out of " << questionCount << " questions.\n";
       cout << "=============================================\n";
